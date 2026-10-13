@@ -229,21 +229,8 @@ function Index() {
                         className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-tertiary/5 pointer-events-none"></div>
-                      <div className="absolute top-4 left-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
-                        SYS_REC // 01
-                      </div>
-                      <div className="absolute bottom-4 right-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
-                        1600 x 1278 PX
-                      </div>
                     </div>
 
-                    <div className="mt-4 pt-3 flex items-center justify-between text-xs text-on-surface-variant">
-                      <span className="flex items-center gap-1.5 text-primary">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                        Active Frame Container
-                      </span>
-                      <span className="font-mono text-[11px] text-outline">QA_PROFILE.FMT</span>
-                    </div>
                   </div>
                 </div>
               </div>
