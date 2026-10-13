@@ -79,17 +79,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Laura Stella Kalmar | Test Automation Engineer" },
-      { name: "description", content: "Laura Stella Kalmar’s test automation portfolio, projects, and professional experience." },
+      {
+        name: "description",
+        content:
+          "Laura Stella Kalmar’s test automation portfolio, projects, and professional experience.",
+      },
       { name: "author", content: "Laura Stella Kalmar" },
       { property: "og:title", content: "Laura Stella Kalmar | Test Automation Engineer" },
-      { property: "og:description", content: "Test automation, quality engineering, and maintainable UI and API frameworks." },
+      {
+        property: "og:description",
+        content: "Test automation, quality engineering, and maintainable UI and API frameworks.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
