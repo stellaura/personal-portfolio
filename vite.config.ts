@@ -7,6 +7,13 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    optimizeDeps: {
+      // Prebundle Slot with React at startup rather than discovering it during
+      // navigation/HMR, which can leave the preview using two React dispatchers.
+      include: ["@radix-ui/react-slot", "@radix-ui/react-compose-refs"],
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
