@@ -220,7 +220,7 @@ function Index() {
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="w-full max-w-sm sm:max-w-md relative group">
                   <div className="relative rounded-2xl p-6 sm:p-8 bg-surface-container/70 backdrop-blur-2xl frame-shadow transition-all duration-500 hover:frame-hover-shadow">
-                    <div className="aspect-[4/5] w-full rounded-xl bg-surface-container-low/80 relative overflow-hidden">
+                    <div className="aspect-[4/5] w-full rounded-xl bg-surface-container-low/80 relative overflow-hidden ring-1 ring-primary/25">
                       <img
                         src={profileAsset.url}
                         alt="Portrait of Laura Stella Kalmar"
