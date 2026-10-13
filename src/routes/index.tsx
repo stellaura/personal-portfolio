@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileAsset from "@/assets/profile-photograph.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -219,32 +220,20 @@ function Index() {
               <div className="lg:col-span-5 flex justify-center lg:justify-end">
                 <div className="w-full max-w-sm sm:max-w-md relative group">
                   <div className="relative rounded-2xl p-6 sm:p-8 bg-surface-container/70 backdrop-blur-2xl frame-shadow transition-all duration-500 hover:frame-hover-shadow">
-                    <div className="aspect-[4/5] w-full rounded-xl bg-surface-container-low/80 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                    <div className="aspect-[4/5] w-full rounded-xl bg-surface-container-low/80 relative overflow-hidden ring-1 ring-primary/25">
+                      <img
+                        src={profileAsset.url}
+                        alt="Portrait of Laura Stella Kalmar"
+                        loading="eager"
+                        decoding="async"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-tertiary/5 pointer-events-none"></div>
-
-                      <div className="relative z-10 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-surface-variant/80 flex items-center justify-center icon-shadow group-hover:scale-105 transition-transform duration-300">
-                        <span className="material-symbols-outlined text-primary text-5xl sm:text-6xl">
-                          photo_camera
-                        </span>
-                      </div>
-
-                      <div className="relative z-10 mt-6 flex flex-col items-center gap-1.5">
-                        <span className="text-xs uppercase font-label text-primary font-semibold">
-                          Profile Photograph
-                        </span>
-                        <span className="text-sm font-headline text-on-surface font-medium">
-                          Reserved Area
-                        </span>
-                        <p className="text-xs text-on-surface-variant max-w-[210px] mt-1 leading-relaxed">
-                          Designated portrait container for professional headshot integration.
-                        </p>
-                      </div>
-
-                      <div className="absolute top-4 left-4 text-[10px] font-mono text-outline">
+                      <div className="absolute top-4 left-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
                         SYS_REC // 01
                       </div>
-                      <div className="absolute bottom-4 right-4 text-[10px] font-mono text-outline">
-                        2400 x 3000 PX
+                      <div className="absolute bottom-4 right-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
+                        1600 x 1278 PX
                       </div>
                     </div>
 
