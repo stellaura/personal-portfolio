@@ -229,10 +229,10 @@ function Index() {
                         className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-tertiary/5 pointer-events-none"></div>
-                      <div className="absolute top-4 left-4 text-[10px] font-mono text-outline">
+                      <div className="absolute top-4 left-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
                         SYS_REC // 01
                       </div>
-                      <div className="absolute bottom-4 right-4 text-[10px] font-mono text-outline">
+                      <div className="absolute bottom-4 right-4 rounded-md bg-surface-container/75 px-1.5 py-0.5 text-[10px] font-mono text-on-surface-variant backdrop-blur-sm">
                         1600 x 1278 PX
                       </div>
                     </div>
